@@ -30,7 +30,7 @@ import handleApiError from '@/utils/handleApiError';
 
 const robotoFont = Roboto({weight:["400","500"],subsets:["latin"]});
 
-const videoDetails:React.FC<{videoData:videoDetailsInterface}> = ({ videoData }) => {
+const VideoDetails:React.FC<{videoData:videoDetailsInterface}> = ({ videoData }) => {
   
   const { isNavActive } = useContext(MyContext);
 
@@ -375,4 +375,4 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
   }
 }
 
-export default videoDetails;
+export default VideoDetails;
