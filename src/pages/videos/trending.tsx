@@ -33,7 +33,7 @@ const Trending: React.FC<{ initialVideos: thumbnailInterface[] }> = ({ initialVi
       try {
         (async()=>{
           if(currentCategory){
-            const { data } = await axios.get(`/api/youtube/videos/T?categoryID=${currentCategory}`);
+            const { data } = await axios.get(`/api/youtube/videos/trending?categoryID=${currentCategory}`);
             setData(data.videos);
           }
           else {
