@@ -313,7 +313,7 @@ const VideoDetails:React.FC<{videoData:videoDetailsInterface}> = ({ videoData })
               ))}
             </div>
             <div ref={relatedVideosRef} >
-              {hasNextPage ? <div className={`pl-5 pr-16 flex items-center justify-center h-16 py-4`}><Loader1/></div> : <></>}
+              {hasNextPage ? <div className={`pl-5 pr-10 flex items-center justify-center h-16 py-4`}><Loader1/></div> : <></>}
             </div>
           </div>
         )}
