@@ -20,7 +20,7 @@ const categories : { name: string, id: string|null }[] = [
   { name: 'films', id: '1' }
 ];
 
-const trending: React.FC<{ initialVideos: thumbnailInterface[] }> = ({ initialVideos }) => {
+const Trending: React.FC<{ initialVideos: thumbnailInterface[] }> = ({ initialVideos }) => {
   
     const { isNavActive } = useContext(MyContext);
     
@@ -33,7 +33,7 @@ const trending: React.FC<{ initialVideos: thumbnailInterface[] }> = ({ initialVi
       try {
         (async()=>{
           if(currentCategory){
-            const { data } = await axios.get(`/api/youtube/videos/trending?categoryID=${currentCategory}`);
+            const { data } = await axios.get(`/api/youtube/videos/T?categoryID=${currentCategory}`);
             setData(data.videos);
           }
           else {
@@ -117,4 +117,4 @@ export async function getStaticProps() {
   }
 }
 
-export default trending
+export default Trending
