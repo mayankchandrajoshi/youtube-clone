@@ -17,7 +17,7 @@ import { FiArrowUpLeft } from 'react-icons/fi'
 import OutsideClick from '@/utils/OutSideClick'
 
 type childrenProps = {
-  children?:React.ReactElement
+  children?:React.ReactNode
 }
 
 export const MyContext = createContext({isNavActive:false});

@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Roboto } from '@next/font/google'
 
 type LayoutProps = {
-  children?:React.ReactElement
+  children?:React.ReactNode
 }
 const robotoFont = Roboto({weight:["400","500"],subsets:["latin"]});
 
@@ -14,7 +14,9 @@ const Layout:React.FC<LayoutProps> = ({children}) => {
       <Head>
         <link rel="shortcut icon" href="/images/youtube_logo.png" />
       </Head>
-      <Navbar children={children}/>
+      <Navbar>
+        {children}
+      </Navbar>
     </div>
   )
 }
