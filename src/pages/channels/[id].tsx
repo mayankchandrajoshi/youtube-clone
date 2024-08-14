@@ -17,7 +17,7 @@ import { MyContext } from '@/components/NavBar/Navbar';
 
 const robotoFont = Roboto({weight:["400","500"],subsets:["latin"]});
 
-const channelDetails = () => {
+const ChannelDetails = () => {
 
   const router = useRouter();
   const { id } = router.query as { id : string};
@@ -157,4 +157,4 @@ const channelDetails = () => {
   )
 }
 
-export default channelDetails
+export default ChannelDetails
