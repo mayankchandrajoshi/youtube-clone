@@ -1,0 +1,11 @@
+.scrollableInteractionBar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollableInteractionBar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: auto;
+    white-space: nowrap;
+}
